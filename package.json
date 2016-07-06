@@ -11,7 +11,7 @@
   ],
   "author": "Tomomi Imura",
   "license": "MIT",
-  "main": "./lib/passport-lyft",
+  "main": "./lib",
   "scripts": {
     "test": "make test"
   },
