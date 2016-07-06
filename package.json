@@ -1,0 +1,25 @@
+{
+  "name": "passport-lyft",
+  "version": "0.0.1",
+  "description": "Lyft authentication strategy for Passport",
+  "keywords": [
+    "passport",
+    "lyft",
+    "auth"
+    "oauth",
+    "oauth2"
+  ],
+  "author": "Tomomi Imura",
+  "license": "MIT",
+  "main": "./lib/passport-lyft",
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "passport-oauth2": "1.x.x"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
