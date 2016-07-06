@@ -6,9 +6,11 @@ This module lets you authenticate using Lyft in your Node.js [Express](http://e
 
 ## Install
 
-```
+```bash
 $ npm install passport-lyft
 ```
+
+
 
 *Note: NOT YET. This has not been submitted to nom, but I will once I have time to clean this up*
 
@@ -16,9 +18,9 @@ $ npm install passport-lyft
 
 #### Configure Strategy
 
-The Lyft authentication strategy authenticates users using an Asana account and OAuth tokens. The strategy requires a`verify` callback, which accepts these credentials and calls `done` providing a user, as well as `options` specifying a client id , client secret, and callback URL.
+The Lyft authentication strategy authenticates users using an Lyft account and OAuth tokens. The strategy requires a `verify` callback, which accepts these credentials and calls `done` providing a user, as well as `options` specifying a client id , client secret, and callback URL.
 
-```
+```javascript
 var lyftStrategy = require('passport-lyft').Strategy;
 
 passport.use(new lyftStrategy({
@@ -35,13 +37,15 @@ passport.use(new lyftStrategy({
 ));
 ```
 
+
+
 #### Authenticate Requests
 
 Use `passport.authenticate()`, specifying the `'lyft'` strategy, to authenticate requests.
 
 For example, as route middleware in an [Express](http://expressjs.com/) application:
 
-```
+```javascript
 app.get('/auth/lyft',
   passport.authenticate('lyft', { scope: ['public','profile'] }
 ));
@@ -51,6 +55,8 @@ app.get('/callback', passport.authenticate('lyft', { failureRedirect: '/login' }
     res.redirect('/');
 });
 ```
+
+
 
 ## License
 
