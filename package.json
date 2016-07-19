@@ -1,15 +1,26 @@
 {
   "name": "passport-lyft",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Lyft authentication strategy for Passport",
   "keywords": [
     "passport",
     "lyft",
-    "auth"
+    "auth",
     "oauth",
     "oauth2"
   ],
-  "author": "Tomomi Imura",
+  "author": {
+    "name": "Tomomi ❤ Imura",
+    "email": "tomomi.i@gmail.com",
+    "url": "http://girliemac.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/girliemac/passport-lyft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/girliemac/passport-lyft/issues"
+  },
   "license": "MIT",
   "main": "./lib",
   "scripts": {
