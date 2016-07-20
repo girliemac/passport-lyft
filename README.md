@@ -11,9 +11,6 @@ $ npm install passport-lyft
 ```
 
 
-
-*Note: NOT YET. This has not been submitted to nom, but I will once I have time to clean this up*
-
 ## Usage
 
 #### Configure Strategy
