@@ -10,10 +10,6 @@ This module lets you authenticate using Lyft in your Node.js [Express](http://e
 $ npm install passport-lyft
 ```
 
-
-
-*Note: NOT YET. This has not been submitted to nom, but I will once I have time to clean this up*
-
 ## Usage
 
 #### Configure Strategy
@@ -32,7 +28,7 @@ passport.use(new lyftStrategy({
   function(accessToken, refreshToken, profile, done) {
     var user = profile;
     user.accessToken = accessToken;
-    return done(null, user); 
+    return done(null, user);
   }
 ));
 ```
